@@ -12,5 +12,8 @@ TEST(SoundexEncoding, RetainsSoleLetterOfOneLetterWord) {
   Soundex soundex;
   auto encoded = soundex.encode("A");
   ASSERT_EQ(encoded, "A");
+
+  encoded = soundex.encode("B");
+  ASSERT_EQ(encoded, "B");
 }
 
